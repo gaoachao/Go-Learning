@@ -1,10 +1,15 @@
 package main
 
 import (
-	"fmt"  //1
-	"io"     //2
-	"net"       //3
+	"fmt"  	
+	"io"     	
+	"net"       
 )
+
+type test struct {
+	test123 string
+	12333445556555 int
+}
 
 func process(conn net.Conn) {
 	defer conn.Close()
