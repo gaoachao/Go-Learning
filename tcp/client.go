@@ -20,9 +20,9 @@ func main() {
 		if err != nil {
 			fmt.Println("readString err =", err)
 		}
-		line = strings.Trim(line," \r\n")
+		line = strings.Trim(line, " \r\n")
 		if line == "exit" {
-			fmt.Println("当前客户端已退出") 
+			fmt.Println("当前客户端已退出")
 			break
 		}
 		_, err = conn.Write([]byte(line + "\n"))
