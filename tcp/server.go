@@ -1,9 +1,9 @@
 package main
 
 import (
-	"fmt"
-	"io"
-	"net"
+	"fmt"  //1
+	"io"     //2
+	"net"       //3
 )
 
 func process(conn net.Conn) {
